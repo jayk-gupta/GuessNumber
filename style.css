@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+font-size: 62.5%;
+box-sizing: border-box;
+}
+body{
+  font-family:'Risque', cursive; 
+  /* font-family: 'Bungee Shade', cursive; */
+  color:white;
+  background-color:#222 ;
+}
+
+header{
+  /* background-color: #ddd; */
+  border-bottom: 5px solid white;
+  height: 35vh;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+h2{
+  font-size: 8rem;
+  letter-spacing: 2px;
+
+}
+.range{
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  letter-spacing: 2px;
+
+}
+.number{
+  position:absolute;
+  font-size: 5rem;
+  width: 12rem;
+  padding: 2rem 4rem;
+  text-align: center;
+  background-color: #eee;
+  color: #222;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+
+.guess{
+  background:none;
+  border: 2px solid white;
+  padding: 4rem;
+  width: 25rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  color: inherit;
+}
+.btn{
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+.btn:hover{
+  background-color: #ccc;
+}
+.play-again{
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+}
+main{
+  height: 65vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 4rem;
+  padding: 4rem;
+  gap: 8rem;
+}
+.input{
+  text-align: center;
+  padding: 5rem;
+  
+}
+.text-display{
+padding: 4rem 0 2rem 12rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+
+@media  (max-width:675px){
+  h2{
+    font-size: 4rem;
+  }
+  main{
+    grid-template-columns: 1fr ;
+    gap: 4rem;
+  }
+  .text-display{
+    /* padding: 4rem 0 2rem 12rem; */
+    padding: 0;
+      align-items:center;
+      gap: 1rem;
+    
+    }
+    .play-again{
+      margin-bottom: 2rem;
+    }
+}
