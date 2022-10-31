@@ -104,20 +104,20 @@ padding: 4rem 0 2rem 12rem;
   main{
    align-items: center;
     gap: 0;
-    padding:0;
+    padding: 0;
+    grid-template-columns: 1fr ;
   }
   .number{
     font-size: 3rem;
     width: 10rem;
-    padding: 2rem 4rem;
+    padding: 1rem ;
   }
   .guess{
-    padding: 4rem;
-    width: 16rem;
+    padding: 1rem;
+    width: 14rem;
     font-size: 2rem;
   }
   .text-display{
-    /* padding: 4rem 0 2rem 12rem; */
     padding: 0;
       align-items:center;
       gap: 1rem;
@@ -127,5 +127,8 @@ padding: 4rem 0 2rem 12rem;
     .play-again{
       margin-bottom: 2rem;
       margin-top: 4rem;
+    }
+    .btn{
+      padding: 1rem 2rem;
     }
 }
